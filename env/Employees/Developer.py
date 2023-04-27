@@ -5,6 +5,6 @@ class Developer (QA):
         super().__init__(name, age, unemployed: False)
 
     def Firing (self):
-        unemployed == True
+        unemployed = True
     
     
