@@ -1,6 +1,10 @@
 from Employee import Employee
 import random
-QAs = []
+QAs = [
+{"name" : "Bob",
+"age" : 21,
+"unemployed" : False}
+]
 
 class QA (Employee):
     def __init__(self, name, age, unemployed):
@@ -15,7 +19,8 @@ class QA (Employee):
 #        i = random.randint(1, n)
 #        QAs[i].unemployed = True
 
-QA.saveQA("Bob", "21", False)
+#QA.saveQA("QA", "Bob", "21", False)
+QA.saveQA("QA", "John", "28", False)
 print(QAs)
         
 
