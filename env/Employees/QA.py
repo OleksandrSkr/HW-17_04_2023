@@ -1,27 +1,18 @@
-from Employee import Employee
-import random
-QAs = [
-{"name" : "Bob",
-"age" : 21,
-"unemployed" : False}
-]
+from Employees.Employee import Employee
 
 class QA (Employee):
-    def __init__(self, name, age, unemployed):
-        super().__init__(name, age)
+    def __init__(self, name, age, unemployed, skills):
+        super().__init__(name, age, unemployed)
+        self._skills = skills
+            
+    def Firing (self, unemployed):
         self._unemployed = unemployed
-#        unemployed = False
-    def saveQA (self, name, age, unemployed):
-        QAs.append(QA)
-
-#    def Firing (self):
-#        n = len(QAs)
-#        i = random.randint(1, n)
-#        QAs[i].unemployed = True
-
-#QA.saveQA("QA", "Bob", "21", False)
-QA.saveQA("QA", "John", "28", False)
-print(QAs)
+        print("QA", QA.__dict__)
         
 
-#Bob = QA("Bob", "21", unemployed : False)
+QA = QA("Nik", 42, True, "automatizer")
+#QA = ("Nik", 42, True, "automatizer")     
+
+#print("QA", QA.__dict__)
+#print("QA", QA)
+#QA.Firing(False)
